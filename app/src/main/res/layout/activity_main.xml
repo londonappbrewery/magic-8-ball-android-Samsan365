@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,5 +9,53 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
+    android:background="#26ade0"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:padding="0dp"
+        android:text=" Make Everyday Decisions Easier !!!"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="25sp"
+        android:visibility="visible"
+        tools:layout_width="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/headTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineAmbientShadowColor="@android:color/background_dark"
+        android:screenReaderFocusable="true">
+
+        <ImageView
+            android:id="@+id/ballImgLater"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="80dp"
+            app:srcCompat="@drawable/ball1" />
+
+        <Button
+            android:id="@+id/askButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ballImgLater"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/buttonName"
+            android:textColor="@android:color/background_light" />
+    </RelativeLayout>
+
 </RelativeLayout>
